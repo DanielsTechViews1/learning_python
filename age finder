@@ -1,0 +1,27 @@
+while True:
+
+    birth_year = input('''          
+            ~AGE FINDER~
+    
+    When were you born (Birth Year)? 
+    ''')
+
+    age = 2021 - int(birth_year)
+    print(f'This is your AGE: {age}')
+
+    do_you_want_to_continue = input('''
+    do you want to continue?
+    ''')
+
+    if do_you_want_to_continue == 'yes':
+        print('OK here you go')
+
+    elif do_you_want_to_continue == 'no':
+        print('''
+        BYE
+        ''')
+        break
+
+    else:
+
+        print("I don't get you, can you try typing again")
